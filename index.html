@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>韩国美女主播-直播生态与频道档案</title>
+<meta name="description" content="韩国美女主播频道生态档案：梳理AfreecaTV、Twitch、YouTube上的热门女主播、直播类型、打赏规则、订阅数据与真实观众评价，附观看指南与常见问题。">
+<meta name="keywords" content="韩国美女主播">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e0245e'/%3E%3Cpath d='M20 40V24l10 8 10-8v16' stroke='%23fff' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"韩国美女主播","inLanguage":"zh-CN","description":"韩国美女主播频道生态与直播档案","potentialAction":{"@type":"SearchAction","target":"/?q={search_term_string}","query-input":"required name=search_term_string"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"AfreecaTV的별풍선一颗多少钱？","acceptedAnswer":{"@type":"Answer","text":"별풍선（星气球）默认1颗100韩元，主播分成约七成，结算按当月累计。100颗即1万韩元，约合人民币52元（按2026年11月汇率）。"}},
+{"@type":"Question","name":"韩国女主播直播通常几点开播？","acceptedAnswer":{"@type":"Answer","text":"AfreecaTV晚间档集中在20:00至次日01:00，部分凌晨档主播在01:00后开播。YouTube频道多为录播加不定期直播，时间以频道公告为准。"}},
+{"@type":"Question","name":"订阅女主播频道需要付费吗？","acceptedAnswer":{"@type":"Answer","text":"Twitch与YouTube订阅按月计费，AfreecaTV有免费关注与付费订阅两档。付费订阅可解锁表情、回放与订阅者专属聊天。"}},
+{"@type":"Question","name":"主播榜单的排名依据是什么？","acceptedAnswer":{"@type":"Answer","text":"按AfreecaTV星气球月收入、Twitch订阅数与CCV峰值综合排序，统计周期为2026年10月8日至11月7日。"}},
+{"@type":"Question","name":"观看韩国女主播直播需要韩国手机号吗？","acceptedAnswer":{"@type":"Answer","text":"观看公开直播不需要；聊天发言在部分频道需实名认证，AfreecaTV海外账号可用邮箱注册，发言权限视频道设置而定。"}}
+]}
+</script>
+<style>
+:root{
+--c-bg:#fdf6f7;--c-surface:#ffffff;--c-ink:#221a1d;--c-ink-2:#5b4d52;--c-ink-3:#8a787e;
+--c-main:#e0245e;--c-main-d:#b3164a;--c-accent:#2b2d6e;--c-soft:#fbe3ea;--c-line:#ecd3da;
+--c-ok:#1f7a5a;--c-warn:#b06a00;
+--f-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+--f-num:"Georgia","Times New Roman",serif;
+--s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:64px;
+--r1:6px;--r2:10px;--r3:16px;--r4:24px;
+--sh1:0 1px 2px rgba(34,26,29,.06),0 2px 8px rgba(34,26,29,.05);
+--sh2:0 6px 24px rgba(34,26,29,.08);
+--w:1160px;
+--sticky-h:108px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-h)}
+body{margin:0;font-family:var(--f-sans);background:var(--c-bg);color:var(--c-ink);line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--c-main-d);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.35;margin:0;font-weight:700}
+p{margin:0 0 var(--s3)}
+ul,ol{margin:0 0 var(--s3);padding-left:1.2em}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--c-accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 var(--s4)}
+.skip{position:absolute;left:-999px;top:0;background:var(--c-ink);color:#fff;padding:10px 16px;z-index:99}
+.skip:focus{left:8px;top:8px}
+
+/* 吸顶组 */
+.sticky-group{position:sticky;top:0;z-index:50}
+.notice{background:var(--c-accent);color:#fff;font-size:13px;line-height:1.5;padding:7px 0}
+.notice .wrap{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.notice b{color:#ffd9e4;font-weight:700}
+.notice .dot{width:6px;height:6px;border-radius:50%;background:#ffd9e4;flex:none}
+.site-header{background:rgba(255,255,255,.97);backdrop-filter:blur(6px);border-bottom:1px solid var(--c-line);box-shadow:var(--sh1)}
+.header-in{display:flex;align-items:center;gap:var(--s4);padding:10px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand-text{font-size:20px;font-weight:800;letter-spacing:.5px;color:var(--c-ink)}
+.brand-text em{font-style:normal;color:var(--c-main)}
+.main-nav{display:flex;gap:2px;flex-wrap:wrap;margin-left:auto}
+.main-nav a{color:var(--c-ink-2);font-size:14px;padding:7px 10px;border-radius:var(--r1);white-space:nowrap}
+.main-nav a:hover,.main-nav a.active{background:var(--c-soft);color:var(--c-main-d);text-decoration:none}
+.header-tools{display:flex;align-items:center;gap:8px}
+.search-wrap{position:relative}
+.search-wrap input{width:170px;padding:8px 12px;border:1px solid var(--c-line);border-radius:999px;font-size:14px;background:#fff;color:var(--c-ink)}
+.search-wrap input:focus{border-color:var(--c-main);outline:none;box-shadow:0 0 0 3px var(--c-soft)}
+.search-msg{position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;border:1px solid var(--c-line);border-radius:var(--r1);padding:8px 10px;font-size:12px;color:var(--c-ink-2);display:none;box-shadow:var(--sh2);z-index:60}
+.search-msg.show{display:block}
+.menu-btn{display:none;background:#fff;border:1px solid var(--c-line);border-radius:var(--r1);padding:8px 12px;font-size:14px;cursor:pointer;color:var(--c-ink)}
+.sub-nav{border-top:1px solid var(--c-line);background:#fff}
+.sub-nav .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:6px;padding-bottom:6px;scrollbar-width:none}
+.sub-nav .wrap::-webkit-scrollbar{display:none}
+.sub-nav a{font-size:13px;color:var(--c-ink-2);padding:5px 10px;border-radius:999px;border:1px solid transparent;white-space:nowrap}
+.sub-nav a:hover{border-color:var(--c-line);color:var(--c-main-d);text-decoration:none;background:var(--c-soft)}
+
+/* 首屏 */
+.hero{padding:var(--s7) 0 var(--s6);position:relative;overflow:hidden}
+.hero-in{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--s6);align-items:center}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;background:var(--c-soft);color:var(--c-main-d);font-size:13px;font-weight:700;padding:5px 12px;border-radius:999px;margin-bottom:var(--s4)}
+.hero h1{font-size:clamp(30px,4.4vw,46px);letter-spacing:1px;margin-bottom:var(--s4)}
+.hero h1 span{color:var(--c-main)}
+.hero-desc{font-size:16px;color:var(--c-ink-2);max-width:52ch;margin-bottom:var(--s5)}
+.hero-cta{display:flex;gap:var(--s3);flex-wrap:wrap;margin-bottom:var(--s5)}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:11px 20px;border-radius:999px;font-size:15px;font-weight:600;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-2px);text-decoration:none}
+.btn-main{background:var(--c-main);color:#fff}
+.btn-main:hover{background:var(--c-main-d)}
+.btn-ghost{background:#fff;color:var(--c-ink);border-color:var(--c-line)}
+.btn-ghost:hover{border-color:var(--c-main);color:var(--c-main-d)}
+.hero-stats{display:flex;gap:var(--s5);flex-wrap:wrap;border-top:1px solid var(--c-line);padding-top:var(--s4)}
+.hero-stats dt{font-size:12px;color:var(--c-ink-3);letter-spacing:.5px}
+.hero-stats dd{margin:0;font-family:var(--f-num);font-size:24px;font-weight:700;color:var(--c-main-d)}
+.hero-art{position:relative;height:auto}
+.hero-art svg{width:100%;height:auto;display:block}
+
+/* 主内容 */
+main{padding:var(--s6) 0 var(--s7)}
+.layout{display:grid;grid-template-columns:1fr 300px;gap:var(--s6);align-items:start}
+.main-col{min-width:0}
+.side{position:sticky;top:calc(var(--sticky-h) + 16px);display:flex;flex-direction:column;gap:var(--s4)}
+.sec{margin-bottom:var(--s7)}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s3);border-bottom:2px solid var(--c-ink);padding-bottom:8px;margin-bottom:var(--s4);flex-wrap:wrap}
+.sec-head h2{font-size:22px;letter-spacing:.5px}
+.sec-head h2 i{font-style:normal;color:var(--c-main);margin-right:6px;font-family:var(--f-num)}
+.sec-head .more{font-size:13px;color:var(--c-ink-3);white-space:nowrap}
+.lead{color:var(--c-ink-2);font-size:15px;margin-bottom:var(--s4)}
+
+/* 卡片网格 */
+.grid{display:grid;gap:var(--s4)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r3);overflow:hidden;box-shadow:var(--sh1);transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-3px);box-shadow:var(--sh2)}
+.card img{width:100%;height:150px;object-fit:cover;background:#f2e6e9}
+.card-body{padding:var(--s3) var(--s4) var(--s4)}
+.card-body h3{font-size:16px;margin-bottom:6px}
+.card-body h3 a{color:var(--c-ink)}
+.card-body h3 a:hover{color:var(--c-main-d);text-decoration:none}
+.card-meta{font-size:12px;color:var(--c-ink-3);display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.tag{display:inline-block;font-size:12px;background:var(--c-soft);color:var(--c-main-d);padding:1px 8px;border-radius:999px;margin-right:4px;margin-bottom:4px}
+.card p{font-size:14px;color:var(--c-ink-2);margin:0}
+
+/* 紧凑列表 */
+.list-tight{list-style:none;padding:0;margin:0;background:#fff;border:1px solid var(--c-line);border-radius:var(--r3);overflow:hidden}
+.list-tight li{border-bottom:1px solid var(--c-line)}
+.list-tight li:last-child{border-bottom:0}
+.list-tight a{display:grid;grid-template-columns:56px 1fr auto;gap:var(--s3);align-items:center;padding:12px var(--s4);color:var(--c-ink)}
+.list-tight a:hover{background:var(--c-soft);text-decoration:none}
+.list-tight .dt{font-family:var(--f-num);font-size:13px;color:var(--c-main-d);font-weight:700}
+.list-tight .tt{font-size:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.list-tight .tt small{display:block;color:var(--c-ink-3);font-size:12px;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.list-tight .ch{font-size:11px;color:var(--c-ink-3);border:1px solid var(--c-line);border-radius:999px;padding:1px 8px;white-space:nowrap}
+
+/* 分类入口 */
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:#fff;border:1px solid var(--c-line);border-radius:999px;padding:9px 16px;font-size:14px;color:var(--c-ink-2);display:inline-flex;align-items:center;gap:6px}
+.chip b{font-family:var(--f-num);color:var(--c-main);font-size:13px}
+.chip:hover{border-color:var(--c-main);color:var(--c-main-d);text-decoration:none;background:var(--c-soft)}
+
+/* 深度解析 */
+.article{background:#fff;border:1px solid var(--c-line);border-radius:var(--r3);padding:var(--s5)}
+.article .meta{font-size:12px;color:var(--c-ink-3);margin-bottom:var(--s3)}
+.article h3{font-size:18px;margin:var(--s5) 0 var(--s2);padding-left:10px;border-left:4px solid var(--c-main)}
+.article h3:first-of-type{margin-top:var(--s2)}
+.article p{font-size:15.5px;color:#332a2d}
+.article .verdict{background:var(--c-soft);border-radius:var(--r2);padding:var(--s4);font-size:15px;margin:var(--s4) 0}
+.article .verdict strong{color:var(--c-main-d)}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--c-line);border-radius:var(--r2);overflow:hidden;margin:var(--s3) 0}
+.compare>div{padding:var(--s3) var(--s4);font-size:14px}
+.compare .h{background:#f7ecef;font-weight:700;font-size:13px;color:var(--c-main-d)}
+.compare .l{border-right:1px solid var(--c-line)}
+.compare>div:nth-child(n+3){border-top:1px solid var(--c-line)}
+.facttable{width:100%;border-collapse:collapse;font-size:14px;margin:var(--s3) 0}
+.facttable caption{caption-side:top;text-align:left;font-size:12px;color:var(--c-ink-3);padding-bottom:6px}
+.facttable th,.facttable td{border:1px solid var(--c-line);padding:7px 10px;text-align:left;vertical-align:top}
+.facttable th{background:#f7ecef;font-weight:700;font-size:13px}
+.facttable td.num{font-family:var(--f-num)}
+
+/* 步骤 */
+.steps{list-style:none;counter-reset:st;padding:0;margin:0;display:grid;gap:var(--s3)}
+.steps li{counter-increment:st;position:relative;background:#fff;border:1px solid var(--c-line);border-radius:var(--r2);padding:var(--s3) var(--s4) var(--s3) 58px;font-size:14.5px}
+.steps li::before{content:counter(st,decimal-leading-zero);position:absolute;left:14px;top:50%;transform:translateY(-50%);font-family:var(--f-num);font-size:20px;font-weight:700;color:var(--c-main);opacity:.75}
+.steps li b{display:block;font-size:15px;margin-bottom:2px}
+
+/* FAQ */
+details.faq{background:#fff;border:1px solid var(--c-line);border-radius:var(--r2);margin-bottom:10px;overflow:hidden}
+details.faq summary{cursor:pointer;padding:13px var(--s4);font-weight:600;font-size:15px;list-style:none;position:relative;padding-right:40px}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:20px;color:var(--c-main);font-weight:400;line-height:1}
+details.faq[open] summary::after{content:"–"}
+details.faq[open] summary{border-bottom:1px solid var(--c-line);background:var(--c-soft)}
+details.faq .faq-body{padding:var(--s3) var(--s4) var(--s4);font-size:14.5px;color:var(--c-ink-2)}
+details.faq .faq-body p:last-child{margin-bottom:0}
+
+/* 评论 */
+.comments{display:grid;gap:var(--s3)}
+.cmt{background:#fff;border:1px solid var(--c-line);border-radius:var(--r2);padding:var(--s3) var(--s4)}
+.cmt-head{display:flex;align-items:center;gap:8px;margin-bottom:4px;flex-wrap:wrap}
+.avatar{width:28px;height:28px;border-radius:50%;background:var(--c-soft);color:var(--c-main-d);font-size:13px;font-weight:700;display:grid;place-items:center;flex:none}
+.cmt-name{font-size:14px;font-weight:700}
+.cmt-time{font-size:12px;color:var(--c-ink-3);margin-left:auto}
+.cmt p{font-size:14.5px;margin:0;color:#332a2d}
+.cmt .quote{color:var(--c-main-d);font-weight:600}
+.cmt.skptic .cmt-name::after{content:" · 挑刺";font-size:11px;color:var(--c-warn);font-weight:400}
+
+/* 相关推荐 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:8px}
+
+/* 侧栏 */
+.side-card{background:#fff;border:1px solid var(--c-line);border-radius:var(--r3);padding:var(--s4);box-shadow:var(--sh1)}
+.side-card h2,.side-card h3{font-size:15px;margin-bottom:var(--s3);display:flex;align-items:center;gap:6px}
+.side-card h2::before,.side-card h3::before{content:"";width:4px;height:14px;background:var(--c-main);border-radius:2px;display:inline-block}
+.side-nav{list-style:none;padding:0;margin:0;display:grid;gap:2px}
+.side-nav a{display:block;font-size:14px;color:var(--c-ink-2);padding:6px 10px;border-radius:var(--r1);border-left:3px solid transparent}
+.side-nav a:hover{background:var(--c-soft);color:var(--c-main-d);text-decoration:none}
+.side-nav a.active{background:var(--c-soft);color:var(--c-main-d);border-left-color:var(--c-main);font-weight:700}
+.rank{list-style:none;padding:0;margin:0;counter-reset:rk}
+.rank li{counter-increment:rk;display:grid;grid-template-columns:24px 1fr;gap:8px;padding:7px 0;border-bottom:1px dashed var(--c-line);font-size:14px;align-items:baseline}
+.rank li:last-child{border-bottom:0}
+.rank li::before{content:counter(rk);font-family:var(--f-num);font-weight:700;color:var(--c-ink-3);font-size:13px}
+.rank li:nth-child(-n+3)::before{color:var(--c-main)}
+.rank .r-sub{display:block;font-size:12px;color:var(--c-ink-3)}
+.side-note{font-size:12px;color:var(--c-ink-3);margin:var(--s3) 0 0}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0;margin:0;position:relative}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--c-line)}
+.timeline li{position:relative;padding:0 0 var(--s4) 30px}
+.timeline li::before{content:"";position:absolute;left:1px;top:6px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--c-main)}
+.timeline .tl-time{font-family:var(--f-num);font-size:12px;color:var(--c-main-d);font-weight:700}
+.timeline .tl-title{font-size:15px;font-weight:700;margin:1px 0 2px}
+.timeline p{font-size:14px;color:var(--c-ink-2);margin:0}
+
+/* 引语卡 */
+.quote-card{background:linear-gradient(135deg,#2b2d6e,#4a3a78);color:#fff;border-radius:var(--r3);padding:var(--s5);position:relative;overflow:hidden}
+.quote-card::before{content:"“";position:absolute;right:18px;top:-10px;font-size:110px;font-family:var(--f-num);opacity:.15;line-height:1}
+.quote-card p{font-size:15.5px;margin-bottom:var(--s3);position:relative}
+.quote-card cite{font-style:normal;font-size:13px;color:#d9c9ec}
+
+/* 页脚 */
+.site-footer{background:#211a1f;color:#cfc2c8;padding:var(--s7) 0 var(--s5);font-size:14px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--s5)}
+.site-footer h3{color:#fff;font-size:15px;margin-bottom:var(--s3)}
+.site-footer a{color:#cfc2c8;display:block;padding:3px 0;font-size:13.5px}
+.site-footer a:hover{color:#fff}
+.f-brand{display:flex;align-items:center;gap:8px;margin-bottom:var(--s3)}
+.f-brand svg{width:30px;height:30px}
+.f-brand b{color:#fff;font-size:18px;letter-spacing:.5px}
+.f-desc{font-size:13.5px;color:#a99aa1;margin-bottom:var(--s3);max-width:34ch}
+.footer-bottom{border-top:1px solid #3a2f35;margin-top:var(--s5);padding-top:var(--s4);font-size:12.5px;color:#8a7b82;display:flex;justify-content:space-between;gap:var(--s3);flex-wrap:wrap}
+.footer-note{font-size:12px;color:#8a7b82;line-height:1.6;margin-top:var(--s3);max-width:60ch}
+
+/* 回到顶部 */
+#toTop{position:fixed;right:18px;bottom:70px;width:42px;height:42px;border-radius:50%;background:var(--c-main);color:#fff;border:0;font-size:16px;cursor:pointer;box-shadow:var(--sh2);opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s,transform .15s;z-index:40}
+#toTop.show{opacity:1;visibility:visible}
+#toTop:hover{background:var(--c-main-d);transform:translateY(-2px)}
+
+/* 响应式 */
+@media (max-width:1000px){
+.layout{grid-template-columns:1fr}
+.side{position:static;order:2}
+.main-col{order:1}
+.g3{grid-template-columns:repeat(2,1fr)}
+.hero-in{grid-template-columns:1fr}
+.hero-art{max-width:460px;margin:0 auto}
+}
+@media (max-width:760px){
+.header-in{gap:10px}
+.main-nav{display:none;width:100%;order:5;flex-direction:column;margin-left:0;border-top:1px solid var(--c-line);padding-top:8px}
+.main-nav.open{display:flex}
+.main-nav a{padding:10px}
+.main-nav.force-open{display:flex}
+.menu-btn{display:inline-block}
+.header-tools{margin-left:auto}
+.search-wrap input{width:130px}
+.g3,.g2{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr 1fr}
+.article{padding:var(--s4)}
+.compare{grid-template-columns:1fr}
+.compare .l{border-right:0;border-bottom:1px solid var(--c-line)}
+.hero{padding:var(--s5) 0}
+.list-tight a{grid-template-columns:48px 1fr}
+.list-tight .ch{display:none}
+.facttable{display:block;overflow-x:auto}
+}
+@media (max-width:420px){
+.footer-grid{grid-template-columns:1fr}
+.wrap{padding:0 12px}
+.search-wrap input{width:96px}
+.hero-stats{gap:var(--s4)}
+}
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{transition:none!important;animation:none!important}
+.card:hover,.btn:hover,#toTop:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<div class="sticky-group">
+  <div class="notice" role="note">
+    <div class="wrap">
+      <span class="dot" aria-hidden="true"></span>
+      <span><b>韩国美女主播</b> 频道档案 11 月榜单已更新</span>
+      <span>· AfreecaTV 星气球月收入 Top10 换榜 4 席（10 月 8 日—11 月 7 日统计）</span>
+      <span>· 新增“凌晨档生存报告”</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-in">
+      <a class="brand" href="/#top" aria-label="韩国美女主播 首页">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#e0245e"></rect>
+          <path d="M20 40V24l10 8 10-8v16" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+          <circle cx="46" cy="20" r="4" fill="#ffd9e4"></circle>
+        </svg>
+        <span class="brand-text">韩国<em>美女主播</em></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">生态概览</a>
+        <a href="/#featured">本周精选</a>
+        <a href="/#latest">最新收录</a>
+        <a href="/#channels">频道分类</a>
+        <a href="/#deep">深度观察</a>
+        <a href="/#guide">观看指南</a>
+        <a href="/#faq">常见问题</a>
+      </nav>
+      <div class="header-tools">
+        <div class="search-wrap">
+          <input id="searchInput" type="search" placeholder="搜主播名 / 频道" aria-label="站内搜索">
+          <div class="search-msg" id="searchMsg" role="status" aria-live="polite"></div>
+        </div>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      </div>
+    </div>
+  </header>
+  <div class="sub-nav" aria-label="快捷频道">
+    <div class="wrap">
+      <a href="/#channels">唱歌主播</a>
+      <a href="/#channels">舞蹈主播</a>
+      <a href="/#channels">游戏主播</a>
+      <a href="/#channels">聊天ASMR</a>
+      <a href="/#channels">吃播</a>
+      <a href="/#channels">虚拟主播</a>
+      <a href="/#channels">凌晨档</a>
+      <a href="/#channels">新人主播</a>
+      <a href="/#rank">收入榜</a>
+      <a href="/#comments">观众评论</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+  <div class="wrap">
+    <section class="hero" id="top" aria-labelledby="h1">
+      <div class="hero-in">
+        <div>
+          <span class="hero-kicker">AfreecaTV · Twitch · YouTube 三平台</span>
+          <h1 id="h1">韩国<em>美女主播</em>频道档案</h1>
+          <p class="hero-desc">从首尔网吧到单人直播间，把女主播的直播时间、互动方式、打赏规则和代表性节目拆开看。可核对的开播表、分成比例、订阅价格，以及围绕这些数字产生的争议与澄清。</p>
+          <div class="hero-cta">
+            <a class="btn btn-main" href="/#rank">看 11 月收入榜</a>
+            <a class="btn btn-ghost" href="/#guide">新观众观看指南</a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt>收录频道</dt><dd>138</dd></div>
+            <div><dt>在播主播</dt><dd>62</dd></div>
+            <div><dt>榜单场次</dt><dd>4</dd></div>
+            <div><dt>覆盖平台</dt><dd>3</dd></div>
+          </dl>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 420 300" role="img">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#e0245e" stop-opacity=".14"></stop>
+                <stop offset="1" stop-color="#2b2d6e" stop-opacity=".12"></stop>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="420" height="300" rx="20" fill="url(#g1)"></rect>
+            <rect x="34" y="42" width="200" height="132" rx="12" fill="#fff" stroke="#ecd3da"></rect>
+            <circle cx="86" cy="96" r="20" fill="#fbd0db"></circle>
+            <path d="M70 96a16 16 0 0132 0" stroke="#e0245e" stroke-width="3" fill="none"></path>
+            <rect x="116" y="80" width="92" height="8" rx="4" fill="#e9d7dd"></rect>
+            <rect x="116" y="96" width="64" height="8" rx="4" fill="#f0e2e6"></rect>
+            <rect x="56" y="132" width="150" height="18" rx="9" fill="#fbe3ea"></rect>
+            <rect x="256" y="58" width="130" height="64" rx="12" fill="#2b2d6e"></rect>
+            <text x="270" y="86" font-size="13" fill="#ffd9e4" font-family="sans-serif">LIVE 20:00</text>
+            <text x="270" y="108" font-size="11" fill="#bdb4dc" font-family="sans-serif">별풍선 32,410</text>
+            <rect x="256" y="140" width="130" height="34" rx="10" fill="#fff" stroke="#ecd3da"></rect>
+            <circle cx="276" cy="157" r="6" fill="#e0245e"></circle>
+            <rect x="292" y="151" width="70" height="5" rx="2" fill="#e9d7dd"></rect>
+            <rect x="292" y="161" width="46" height="5" rx="2" fill="#f0e2e6"></rect>
+            <rect x="34" y="198" width="352" height="54" rx="12" fill="#fff" stroke="#ecd3da"></rect>
+            <rect x="50" y="214" width="70" height="22" rx="11" fill="#fbe3ea"></rect>
+            <rect x="128" y="214" width="70" height="22" rx="11" fill="#eef0ff"></rect>
+            <rect x="206" y="214" width="70" height="22" rx="11" fill="#fdf0e3"></rect>
+            <rect x="284" y="214" width="86" height="22" rx="11" fill="#f3f3f3"></rect>
+            <path d="M34 274h352" stroke="#ecd3da" stroke-dasharray="4 6"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="layout">
+      <div class="main-col">
+
+        <!-- 生态概览 -->
+        <section class="sec" id="overview" aria-labelledby="h-overview">
+          <div class="sec-head">
+            <h2 id="h-overview"><i>01</i>韩国直播生态概览</h2>
+            <span class="more">更新 11 月 7 日</span>
+          </div>
+          <p class="lead">韩国女主播直播的主战场分三块：以首尔为中心、付费打赏驱动的 AfreecaTV；面向海外用户的 Twitch 频道；以及以录播切片和 vlog 为主的 YouTube。三者规则不同，观众习惯也不同。</p>
+          <div class="grid g3">
+            <article class="card">
+              <div class="card-body">
+                <div class="card-meta"><span class="tag">AfreecaTV</span><span>2006 年开站</span></div>
+                <h3>星气球打赏体系</h3>
+                <p>1 颗별풍선等于 100 韩元，主播结算约七成，大额打赏会在直播间滚动显示，形成“榜单共识”。</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <div class="card-meta"><span class="tag">Twitch</span><span>订阅制</span></div>
+                <h3>订阅与表情经济</h3>
+                <p>Tier1 订阅每月 4.99 美元，频道表情、回放和专属聊天是留存主力，主播更依赖稳定订阅而非一次性打赏。</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <div class="card-meta"><span class="tag">YouTube</span><span>录播转化</span></div>
+                <h3>切片反向导流</h3>
+                <p>一段高能切片常带来数万播放，再把观众引向直播。金采媛的舞蹈切片在 10 月 28 日单条破 41 万播放。</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 精选推荐 -->
+        <section class="sec" id="featured" aria-labelledby="h-featured">
+          <div class="sec-head">
+            <h2 id="h-featured"><i>02</i>本周精选主播推荐</h2>
+            <span class="more">6 个频道 · 编辑挑选</span>
+          </div>
+          <div class="grid g3">
+            <article class="card">
+              <img src="https://picsum.photos/seed/kbs-mc-yuna/480/300" width="480" height="300" loading="lazy" alt="粉色灯光下的单人直播间，麦克风前坐着主播">
+              <div class="card-body">
+                <div class="card-meta"><span class="tag">唱歌主播</span><span>AfreecaTV</span></div>
+                <h3><a href="/#deep">尹夏琳的深夜点歌间</a></h3>
+                <p>20:30 开播，观众点歌按弹幕顺序，10 月 31 日连唱 4 小时、点歌 37 首，中场休息固定 8 分钟。</p>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://picsum.photos/seed/kbs-mc-dance/480/300" width="480" height="300" loading="lazy" alt="舞蹈直播间地面铺着反光地胶，背景有环形补光灯">
+              <div class="card-body">
+                <div class="card-meta"><span class="tag">舞蹈主播</span><span>Twitch</span></div>
+                <h3><a href="/#latest">金采媛的翻跳课表</a></h3>
+                <p>每周三、六晚 21:00 翻跳 K-pop，11 月 4 日场次 CCV 峰值 3,180，舞蹈分解段落单独剪辑上传。</p>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://picsum.photos/seed/kbs-mc-asmr/480/300" width="480" height="300" loading="lazy" alt="ASMR 直播间的双耳麦克风和毛绒罩">
+              <div class="card-body">
+                <div class="card-meta"><span class="tag">ASMR</span><span>AfreecaTV</span></div>
+                <h3><a href="/#guide">朴多恩的耳语小时</a></h3>
+                <p>凌晨 00:30 档，固定三十分钟耳语和翻书音，11 月 2 日因设备故障改用手机直播，观众反而增加。</p>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://picsum.photos/seed/kbs-mc-game/480/300" width="480" height="300" loading="lazy" alt="游戏直播间双屏显示器，主播手边放着能量饮料">
+              <div class="card-body">
+                <div class="card-meta"><span class="tag">游戏主播</span><span>Twitch</span></div>
+                <h3><a href="/#comments">李瑞妍的排位陪跑</a></h3>
+                <p>《英雄联盟》银金段位观众上车，11 月 5 日一晚上车 14 人，输了当场复盘，不读刷屏弹幕。</p>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://picsum.photos/seed/kbs-mc-mukbang/480/300" width="480" height="300" loading="lazy" alt="吃播桌面摆着韩式炸鸡与辣炒年糕">
+              <div class="card-body">
+                <div class="card-meta"><span class="tag">吃播</span><span>AfreecaTV</span></div>
+                <h3><a href="/#rank">郑宥真的一人食</a></h3>
+                <p>每周二、四 19:00 播 90 分钟，11 月 3 日吃炸鸡和辣炒年糕，弹幕点单最多的是部队锅。</p>
+              </div>
+            </article>
+            <article class="card">
+              <img src="https://picsum.photos/seed/kbs-mc-vtuber/480/300" width="480" height="300" loading="lazy" alt="虚拟主播的环形灯光与动作捕捉摄像头">
+              <div class="card-body">
+                <div class="card-meta"><span class="tag">虚拟主播</span><span>YouTube</span></div>
+                <h3><a href="/#channels">宋智安的 2D 陪聊</a></h3>
+                <p>皮套为原创 2D，主打周五晚读评论，11 月 6 日回应打赏争议时在线人数升到 2,400。</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 最新更新 -->
+        <section class="sec" id="latest" aria-labelledby="h-latest">
+          <div class="sec-head">
+            <h2 id="h-latest"><i>03</i>最近更新的直播动态</h2>
+            <span class="more">11 月 1 日 — 11 月 8 日</span>
+          </div>
+          <ul class="list-tight">
+            <li><a href="/#deep">
+              <span class="dt">11-08</span>
+              <span class="tt">尹夏琳调整点歌规则：单人单场限点 2 首<small>此前为不限次数，公告挂在她直播间左上角</small></span>
+              <span class="ch">AfreecaTV</span>
+            </a></li>
+            <li><a href="/#comments">
+              <span class="dt">11-07</span>
+              <span class="tt">金采媛翻跳《Supernova》切片播放破 41 万<small>评论区出现“伴奏盖过人声”的具体批评</small></span>
+              <span class="ch">Twitch</span>
+            </a></li>
+            <li><a href="/#channels">
+              <span class="dt">11-06</span>
+              <span class="tt">朴多恩更换双耳麦克风，耳语档改到 00:30 开播<small>官方粉丝俱乐部帖子给出设备型号</small></span>
+              <span class="ch">ASMR</span>
+            </a></li>
+            <li><a href="/#rank">
+              <span class="dt">11-05</span>
+              <span class="tt">郑宥真吃播单场星气球收入进月榜第 6<small>较上月升 3 位，部队锅场次贡献 38%</small></span>
+              <span class="ch">吃播</span>
+            </a></li>
+            <li><a href="/#guide">
+              <span class="dt">11-04</span>
+              <span class="tt">李瑞妍开通订阅者专属复盘区<small>订阅满 3 个月可看每局逐帧回放</small></span>
+              <span class="ch">游戏</span>
+            </a></li>
+            <li><a href="/#faq">
+              <span class="dt">11-02</span>
+              <span class="tt">宋智安回应打赏争议：公开单场抽成明细<small>声明中列出平台抽成比例与到账时间</small></span>
+              <span class="ch">虚拟</span>
+            </a></li>
+          </ul>
+        </section>
+
+        <!-- 分类入口 -->
+        <section class="sec" id="channels" aria-labelledby="h-channels">
+          <div class="sec-head">
+            <h2 id="h-channels"><i>04</i>按直播类型找主播</h2>
+            <span class="more">10 个频道</span>
+          </div>
+          <p class="lead">名字后面的数字是该类型当前收录的频道数。选类型比选平台更有效，因为同一类型在不同平台的开播时段往往重叠。</p>
+          <div class="chips">
+            <a class="chip" href="/#featured">唱歌主播 <b>24</b></a>
+            <a class="chip" href="/#featured">舞蹈主播 <b>19</b></a>
+            <a class="chip" href="/#featured">游戏主播 <b>17</b></a>
+            <a class="chip" href="/#featured">聊天主播 <b>15</b></a>
+            <a class="chip" href="/#featured">ASMR <b>12</b></a>
+            <a class="chip" href="/#featured">吃播 <b>11</b></a>
+            <a class="chip" href="/#featured">虚拟主播 <b>9</b></a>
+            <a class="chip" href="/#latest">凌晨档 <b>23</b></a>
+            <a class="chip" href="/#guide">新人主播 <b>8</b></a>
+            <a class="chip" href="/#comments">户外连线 <b>5</b></a>
+          </div>
+        </section>
+
+        <!-- 深度解析 -->
+        <section class="sec" id="deep" aria-labelledby="h-deep">
+          <div class="sec-head">
+            <h2 id="h-deep"><i>05</i>深度观察：星气球收入并不是唯一标尺</h2>
+            <span class="more">约 1200 字</span>
+          </div>
+          <article class="article">
+            <div class="meta">数据口径：AfreecaTV 星气球月榜、Twitch 订阅与 CCV 峰值，统计期 2026-10-08 至 2026-11-07</div>
+            <p>先把结论放前面：<strong>以星气球收入衡量主播热度，会系统性低估唱歌与 ASMR 主播的实际观众规模。</strong>理由不在感受，而在三种可查的差异——打赏密度、单场时长、订阅结构。</p>
+
+            <h3>打赏密度：舞蹈主播每千观众的收入是 ASMR 的 3.6 倍</h3>
+            <p>取 11 月 7 日傍晚同时段开播的 8 个频道，用单场星气球数除以 CCV 峰值，得到每千观众打赏额。金采媛频道（舞蹈，CCV 3,180，星气球 4.7 万颗）为 14.7 万韩元；朴多恩频道（ASMR，CCV 2,650，星气球 1.08 万颗）为 4.1 万韩元。两者观众数相差不到 20%，打赏额差 4.35 倍，折到每千观众是 3.6 倍。</p>
+            <p>原因并不神秘。舞蹈直播每 3—5 分钟一个完整节目单元，观众判断“值不值得打赏”的节点密集；ASMR 是连续长音频，收听的观众往往一边做别的事，打开钱包的频率低。用打赏榜判断“谁更受欢迎”，在 ASMR 类别上失真。</p>
+
+            <table class="facttable">
+              <caption>11 月 7 日 20:00—22:00 同时段抽样（星气球按 100 韩元/颗折算）</caption>
+              <thead><tr><th>频道</th><th>类型</th><th>CCV 峰值</th><th>星气球</th><th>每千观众打赏额</th></tr></thead>
+              <tbody>
+                <tr><td>金采媛</td><td>舞蹈</td><td class="num">3,180</td><td class="num">47,000</td><td class="num">147.8 万韩元</td></tr>
+                <tr><td>尹夏琳</td><td>唱歌</td><td class="num">4,420</td><td class="num">39,600</td><td class="num">89.6 万韩元</td></tr>
+                <tr><td>李瑞妍</td><td>游戏</td><td class="num">2,140</td><td class="num">21,300</td><td class="num">99.5 万韩元</td></tr>
+                <tr><td>朴多恩</td><td>ASMR</td><td class="num">2,650</td><td class="num">10,800</td><td class="num">40.8 万韩元</td></tr>
+              </tbody>
+            </table>
+
+            <h3>单场时长：凌晨档把月榜往前推，也把主播体力透支摆在明面</h3>
+            <p>按 AfreecaTV 的公开排播表，凌晨段（01:00—04:00）平均单场 3.7 小时，晚间段 2.6 小时。时长拉长直接抬高星气球总量，但单位时间收入并不高：郑宥真 11 月 3 日吃播 4 小时 12 分钟，收获 5.2 万颗，速率为 1.24 万颗/小时；同周金采媛 2 小时 05 分收 3.9 万颗，速率为 1.87 万颗/小时。</p>
+            <p>这引出一个可被反驳的判断：<strong>凌晨档主播的排名优势，有相当部分来自“在场时间”，而不是“单位时间吸金力”。</strong>若平台改用每小时星气球中位数排榜，朴多恩会上升 9 位，郑宥真会下降 4 位。这个换算法不完美，但至少把“熬时长”从“受欢迎”里拆了出来。</p>
+
+            <div class="verdict">
+              <strong>可核对判断：</strong>把月榜前 10 名按“每小时星气球”重排，唱歌类上升、吃播类下降，说明当前榜单奖励的是开播总时长。反驳方式也明确——若拿到各频道后台连击打赏分布，可检验大额打赏是否集中在固定几分钟内。
+            </div>
+
+            <h3>订阅结构：Twitch 主播更怕观众流失，AfreecaTV 主播更怕大额断供</h3>
+            <p>Twitch 订阅按月续费，主播收入曲线平缓；AfreecaTV 收入高度依赖少数大额打赏。李瑞妍 10 月订阅数 1,840，Tier1 订阅每月贡献约 5,700 美元毛收入；同月她的星气球收入 31 万颗，折合 2,170 万韩元。两条腿走路，抗风险明显更强。</p>
+            <p>反过来，只靠打赏的频道遇到“榜一”停手，收入会断崖。宋智安在 11 月 2 日的声明里给出自家数据：单场打赏中，前 3 名观众贡献 61%。平台抽成后到账周期 7 个工作日。这些是可以被观众核对的数字，比“感谢支持”有用。</p>
+
+            <div class="compare">
+              <div class="h">说法 A：榜单等于人气</div>
+              <div class="h">说法 B：榜单等于付费密度</div>
+              <div class="l">依据是月星气球总量，观众看得见。</div>
+              <div>依据是每千观众打赏额，需要自己算。</div>
+              <div class="l">问题：凌晨档靠时长堆量，ASMR 被低估。</div>
+              <div>问题：大额打赏集中在少数人，样本小。</div>
+              <div class="l">结论：适合做曝光入口。</div>
+              <div>结论：适合做类型间比较。</div>
+            </div>
+            <p>两种说法都不完整。看榜单找主播没问题，但拿它给“谁更红”下定义，会漏掉整整一类深夜收听型观众。11 月 7 日的四个频道抽样已经说明，观众数接近时，打赏额能差 4 倍以上。</p>
+          </article>
+        </section>
+
+        <!-- 观看指南 -->
+        <section class="sec" id="guide" aria-labelledby="h-guide">
+          <div class="sec-head">
+            <h2 id="h-guide"><i>06</i>新观众观看指南</h2>
+            <span class="more">照着做即可</span>
+          </div>
+          <ol class="steps">
+            <li><b>先定时段，再看类型</b>韩国时间比北京时间快 1 小时。晚间档 20:00 开播对应北京时间 19:00。想找凌晨档，直接在 AfreecaTV 分类页按“深夜”筛选。</li>
+            <li><b>注册只看不说的账号</b>AfreecaTV 海外账号用邮箱即可；Twitch 用邮箱或第三方登录。不发弹幕也能看全部公开直播。</li>
+            <li><b>打赏前确认币种与汇率</b>별풍선 1 颗 100 韩元，100 颗 1 万韩元，约合人民币 52 元。Twitch 订阅 4.99 美元，按当地支付渠道结算。</li>
+            <li><b>区分“关注”和“订阅”</b>关注免费，只收开播提醒；订阅付费，解锁表情与回放。AfreecaTV 两档并存，别把关注当成付费。</li>
+            <li><b>遇到争议先看主播公告</b>分成、打赏、排班变更多挂在直播间顶部公告或粉丝俱乐部，比切片评论区可靠。</li>
+          </ol>
+          <p class="lead" style="margin-top:16px">频道设置差异较大：部分频道要求聊天实名，部分允许游客只读。进房先看右下角聊天框的输入提示，能省一次被封禁的麻烦。</p>
+        </section>
+
+        <!-- 收入榜 -->
+        <section class="sec" id="rank" aria-labelledby="h-rank">
+          <div class="sec-head">
+            <h2 id="h-rank"><i>07</i>11 月星气球收入榜（前 10）</h2>
+            <span class="more">统计期 10-08 至 11-07</span>
+          </div>
+          <div class="grid g2">
+            <div class="side-card">
+              <h3>按星气球总量排序</h3>
+              <ol class="rank">
+                <li><span>尹夏琳<span class="r-sub">唱歌 · 月星气球 128.4 万颗</span></span></li>
+                <li><span>金采媛<span class="r-sub">舞蹈 · 月星气球 117.9 万颗</span></span></li>
+                <li><span>李瑞妍<span class="r-sub">游戏 · 月星气球 96.2 万颗</span></span></li>
+                <li><span>郑宥真<span class="r-sub">吃播 · 月星气球 88.5 万颗</span></span></li>
+                <li><span>朴多恩<span class="r-sub">ASMR · 月星气球 71.3 万颗</span></span></li>
+                <li><span>宋智安<span class="r-sub">虚拟 · 月星气球 63.8 万颗</span></span></li>
+                <li><span>韩素拉<span class="r-sub">聊天 · 月星气球 55.1 万颗</span></span></li>
+                <li><span>吴敏芝<span class="r-sub">唱歌 · 月星气球 49.6 万颗</span></span></li>
+                <li><span>崔恩菲<span class="r-sub">舞蹈 · 月星气球 44.2 万颗</span></span></li>
+                <li><span>裴秀彬<span class="r-sub">游戏 · 月星气球 40.9 万颗</span></span></li>
+              </ol>
+              <p class="side-note">榜单按平台公开数据整理，未扣除平台抽成与税费。</p>
+            </div>
+            <div class="side-card">
+              <h3>按每小时星气球重排（前 6）</h3>
+              <ol class="rank">
+                <li><span>金采媛<span class="r-sub">1.87 万颗/小时</span></span></li>
+                <li><span>尹夏琳<span class="r-sub">1.62 万颗/小时</span></span></li>
+                <li><span>李瑞妍<span class="r-sub">1.41 万颗/小时</span></span></li>
+                <li><span>宋智安<span class="r-sub">1.38 万颗/小时</span></span></li>
+                <li><span>郑宥真<span class="r-sub">1.24 万颗/小时</span></span></li>
+                <li><span>朴多恩<span class="r-sub">0.92 万颗/小时</span></span></li>
+              </ol>
+              <p class="side-note">换算口径见深度观察板块，两榜差异即“时长效应”的大小。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="sec" id="faq" aria-labelledby="h-faq">
+          <div class="sec-head">
+            <h2 id="h-faq"><i>08</i>常见问题</h2>
+            <span class="more">5 个问题</span>
+          </div>
+          <details class="faq" open>
+            <summary>AfreecaTV 的별풍선一颗多少钱？主播能拿多少？</summary>
+            <div class="faq-body">
+              <p>1 颗별풍선售价 100 韩元，约合人民币 0.52 元（2026 年 11 月汇率）。主播结算比例通常为七成，平台保留约三成，按月累计、次月结算。以郑宥真 11 月 3 日场次 5.2 万颗计，税前约 364 万韩元。</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>韩国女主播一般几点开播？</summary>
+            <div class="faq-body">
+              <p>AfreecaTV 晚间档集中在 20:00 至次日 01:00，凌晨档主播多在 01:00 之后接棒。Twitch 频道时间更分散，YouTube 以录播和每周固定直播为主。换算成北京时间各减 1 小时，例如 20:00 开播即北京时间 19:00。</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>订阅和打赏有什么区别，哪个更划算？</summary>
+            <div class="faq-body">
+              <p>订阅是按月付费换取表情、回放等权限，金额固定、可随时取消；打赏是一次性付费，金额自定、即时生效。想要稳定看回放选订阅，只想在某场直播表达支持选打赏。Twitch 订阅 4.99 美元/月，AfreecaTV 打赏从 100 韩元起。</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>海外观众需要韩国手机号才能发言吗？</summary>
+            <div class="faq-body">
+              <p>看直播不需要。部分频道要求实名认证才能聊天，AfreecaTV 海外账号可用邮箱注册后申请发言权限；Twitch 用邮箱即可发言。频道是否开放游客聊天，以聊天框输入提示为准。</p>
+            </div>
+          </details>
+          <details class="faq">
+            <summary>榜单排名是怎么算出来的？</summary>
+            <div class="faq-body">
+              <p>收数口径为 AfreecaTV 星气球月总量，统计期 2026 年 10 月 8 日至 11 月 7 日；每小时星气球榜单用总量除以当月开播小时数。未扣除平台抽成，未纳入 Twitch 订阅收入，因此不代表主播实际到手。</p>
+            </div>
+          </details>
+        </section>
+
+        <!-- 用户评论 -->
+        <section class="sec" id="comments" aria-labelledby="h-cmt">
+          <div class="sec-head">
+            <h2 id="h-cmt"><i>09</i>观众怎么说</h2>
+            <span class="more">5 条精选</span>
+          </div>
+          <div class="comments">
+            <div class="cmt">
+              <div class="cmt-head"><span class="avatar">林</span><span class="cmt-name">林间小径</span><span class="cmt-time">11-07 22:14</span></div>
+              <p><span class="quote">金采媛 11 月 4 日翻跳《Supernova》</span>，副歌那段走位确实比上周顺，但伴奏压得太满，人声几乎听不见。剪辑版把伴奏调低了一点，直播原版没有。</p>
+            </div>
+            <div class="cmt">
+              <div class="cmt-head"><span class="avatar">K</span><span class="cmt-name">khb_0521</span><span class="cmt-time">11-06 01:38</span></div>
+              <p>凌晨档真的顶不住。朴多恩换麦克风之后耳语细节清楚很多，但她自己说嗓子状态下滑，00:30 开播其实是往后挪了半小时，老观众得重新调闹钟。</p>
+            </div>
+            <div class="cmt skptic">
+              <div class="cmt-head"><span class="avatar">郑</span><span class="cmt-name">郑先生的遥控器</span><span class="cmt-time">11-05 19:22</span></div>
+              <p>吃播榜第 6 有点虚高。<span class="quote">郑宥真那场炸鸡加辣炒年糕</span>看了四十分钟，后半段基本在聊天，食物镜头不到一半，打赏主要集中在前二十分钟。</p>
+            </div>
+            <div class="cmt">
+              <div class="cmt-head"><span class="avatar">夏</span><span class="cmt-name">夏夜散步</span><span class="cmt-time">11-04 21:05</span></div>
+              <p>李瑞妍的排位陪跑规则写得清楚：上车排队、不读刷屏、输了复盘。上周带了两个金段位上分，复盘时逐帧讲视野，这种内容比单纯打赏实在。</p>
+            </div>
+            <div class="cmt skptic">
+              <div class="cmt-head"><span class="avatar">S</span><span class="cmt-name">seoulite_88</span><span class="cmt-time">11-03 02:47</span></div>
+              <p>宋智安那份抽成声明看了，列了 61% 来自前 3 名观众，但没给具体场次和日期。数字可信度打个问号。愿意公开就是进步，可核对的东西还不够。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 相关资讯 -->
+        <section class="sec" id="news" aria-labelledby="h-news">
+          <div class="sec-head">
+            <h2 id="h-news"><i>10</i>相关资讯</h2>
+            <span class="more">3 条</span>
+          </div>
+          <div class="grid g3">
+            <article class="card">
+              <div class="card-body">
+                <div class="card-meta"><span class="tag">平台规则</span><span>11-07</span></div>
+                <h3><a href="/#faq">AfreecaTV 调整大额打赏显示时长</a></h3>
+                <p>单笔超 1 万颗的滚动条从 30 秒改为 15 秒，主播可自行关闭。官方公告未说明原因。</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <div class="card-meta"><span class="tag">排班</span><span>11-05</span></div>
+                <h3><a href="/#latest">多位凌晨档主播把开播时间前移</a></h3>
+                <p>受冬季作息与观众反馈影响，朴多恩、韩素拉把开播从 01:30 调至 00:30 一线。</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <div class="card-meta"><span class="tag">切片</span><span>11-03</span></div>
+                <h3><a href="/#featured">舞蹈切片带动订阅增长</a></h3>
+                <p>金采媛一条翻跳切片 3 天带来约 260 个新订阅，转化集中在切片发布的当晚。</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 相关推荐 -->
+        <section class="sec" id="related" aria-labelledby="h-rel">
+          <div class="sec-head">
+            <h2 id="h-rel"><i>11</i>相关推荐</h2>
+          </div>
+          <div class="rec-tags">
+            <a class="chip" href="/#channels">AfreecaTV 星气球怎么买</a>
+            <a class="chip" href="/#deep">韩国女主播收入榜解读</a>
+            <a class="chip" href="/#guide">K-pop 翻跳直播间推荐</a>
+            <a class="chip" href="/#featured">ASMR 耳语主播排行</a>
+            <a class="chip" href="/#latest">凌晨档直播时间表</a>
+            <a class="chip" href="/#faq">韩国直播平台订阅价格对比</a>
+            <a class="chip" href="/#comments">游戏陪跑主播上车规则</a>
+            <a class="chip" href="/#rank">虚拟主播打赏争议梳理</a>
+          </div>
+        </section>
+
+        <!-- 引语 / 创作者证言 -->
+        <section class="sec" id="voice" aria-labelledby="h-voice">
+          <div class="sec-head">
+            <h2 id="h-voice"><i>12</i>主播自述与时间线</h2>
+          </div>
+          <div class="quote-card">
+            <p>“点歌限制到两首之后，弹幕反而更安静了。以前一晚上要处理三百条点歌，现在能听清歌词，也能记住常来的名字。”</p>
+            <cite>—— 尹夏琳，11 月 8 日直播公告，关于点歌规则变更</cite>
+          </div>
+          <ul class="timeline" style="margin-top:24px">
+            <li>
+              <div class="tl-time">10 月 12 日</div>
+              <div class="tl-title">金采媛频道订阅突破 1,800</div>
+              <p>Twitch 订阅页显示 1,806，较月初增加约 210。频道简介同步标注了每周三、六的固定翻跳时段。</p>
+            </li>
+            <li>
+              <div class="tl-time">10 月 22 日</div>
+              <div class="tl-title">朴多恩换用双耳麦克风</div>
+              <p>粉丝俱乐部帖子列出设备型号与摆位图，次日耳语档直播在线人数 2,410，比前一周同档增加约 380。</p>
+            </li>
+            <li>
+              <div class="tl-time">11 月 2 日</div>
+              <div class="tl-title">宋智安公开打赏抽成明细</div>
+              <p>声明含平台抽成比例、到账周期与前 3 名观众贡献占比 61%。未提供具体场次编号。</p>
+            </li>
+            <li>
+              <div class="tl-time">11 月 6 日</div>
+              <div class="tl-title">凌晨档集体调整时段</div>
+              <p>韩素拉、朴多恩先后把开播前移 1 小时，公告均提到冬季作息与观众通勤时间。</p>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- 侧栏 -->
+      <aside class="side" aria-label="侧栏">
+        <div class="side-card">
+          <h2>栏目导航</h2>
+          <ul class="side-nav" id="sideNav">
+            <li><a href="/#overview">直播生态概览</a></li>
+            <li><a href="/#featured">本周精选主播</a></li>
+            <li><a href="/#latest">最近更新动态</a></li>
+            <li><a href="/#channels">直播类型分类</a></li>
+            <li><a href="/#deep">深度观察</a></li>
+            <li><a href="/#guide">观看指南</a></li>
+            <li><a href="/#rank">星气球收入榜</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#comments">观众评论</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#related">相关推荐</a></li>
+            <li><a href="/#voice">主播自述</a></li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h3>今晚开播（北京时间）</h3>
+          <ul class="rank">
+            <li><span>19:00 尹夏琳<span class="r-sub">唱歌 · 点歌限 2 首</span></span></li>
+            <li><span>19:00 郑宥真<span class="r-sub">吃播 · 一人食</span></span></li>
+            <li><span>20:00 金采媛<span class="r-sub">舞蹈 · 翻跳课表</span></span></li>
+            <li><span>20:00 李瑞妍<span class="r-sub">游戏 · 排位陪跑</span></span></li>
+            <li><span>23:30 朴多恩<span class="r-sub">ASMR · 耳语小时</span></span></li>
+          </ul>
+          <p class="side-note">韩国时间减 1 小时即为北京时间，以频道公告为准。</p>
+        </div>
+        <div class="side-card">
+          <h3>关键词索引</h3>
+          <div class="rec-tags">
+            <a class="chip" href="/#channels">별풍선</a>
+            <a class="chip" href="/#deep">K-pop 翻跳</a>
+            <a class="chip" href="/#faq">订阅制</a>
+            <a class="chip" href="/#latest">凌晨档</a>
+            <a class="chip" href="/#rank">收入榜</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#e0245e"></rect>
+            <path d="M20 40V24l10 8 10-8v16" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="46" cy="20" r="4" fill="#ffd9e4"></circle>
+          </svg>
+          <b>韩国美女主播</b>
+        </div>
+        <p class="f-desc">把直播时段、打赏规则、订阅价格和观众评论放在同一张桌上，供比对。</p>
+        <p class="footer-note">栏目数据为示例整理，统计期 2026-10-08 至 2026-11-07，仅供参考。</p>
+      </div>
+      <div>
+        <h3>内容栏目</h3>
+        <a href="/#overview">直播生态概览</a>
+        <a href="/#featured">本周精选主播</a>
+        <a href="/#latest">最近更新动态</a>
+        <a href="/#channels">直播类型分类</a>
+      </div>
+      <div>
+        <h3>观看参考</h3>
+        <a href="/#deep">深度观察</a>
+        <a href="/#guide">观看指南</a>
+        <a href="/#rank">星气球收入榜</a>
+        <a href="/#faq">常见问题</a>
+      </div>
+      <div>
+        <h3>互动</h3>
+        <a href="/#comments">观众评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#related">相关推荐</a>
+        <a href="/#voice">主播自述</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 韩国美女主播频道档案 · 内容示例，非官方站点</span>
+      <span>页面更新：2026-11-08（新增凌晨档时段时间线、收入榜换算口径）</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  menuBtn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    menuBtn.textContent=open?'关闭':'菜单';
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A' && window.innerWidth<=760){
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+      menuBtn.textContent='菜单';
+    }
+  });
+
+  var input=document.getElementById('searchInput');
+  var msg=document.getElementById('searchMsg');
+  var cards=Array.prototype.slice.call(document.querySelectorAll('.main-col section'));
+  input.addEventListener('input',function(){
+    var q=input.value.trim().toLowerCase();
+    if(!q){msg.classList.remove('show');msg.textContent='';cards.forEach(function(s){s.style.display=''});return;}
+    var hit=0;
+    cards.forEach(function(sec){
+      var text=sec.textContent.toLowerCase();
+      if(text.indexOf(q)>-1){sec.style.display='';hit++;}else{sec.style.display='none';}
+    });
+    msg.classList.add('show');
+    msg.textContent=hit?('找到 '+hit+' 个含“'+input.value.trim()+'”的板块'):'没有找到相关主播或频道，换个关键词试试';
+  });
+
+  var sideLinks=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var targets=sideLinks.map(function(a){return document.querySelector(a.getAttribute('href').replace('/#','#'));});
+  var ticking=false;
+  function highlight(){
+    var pos=window.scrollY+140;
+    var idx=-1;
+    targets.forEach(function(t,i){if(t && t.offsetTop<=pos)idx=i;});
+    sideLinks.forEach(function(a,i){a.classList.toggle('active',i===idx);});
+    ticking=false;
+  }
+  window.addEventListener('scroll',function(){
+    if(!ticking){requestAnimationFrame(highlight);ticking=true;}
+  },{passive:true});
+  highlight();
+
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    toTop.classList.toggle('show',window.scrollY>500);
+  },{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+              </html>
